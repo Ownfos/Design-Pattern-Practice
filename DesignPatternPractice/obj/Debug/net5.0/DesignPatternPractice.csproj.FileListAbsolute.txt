@@ -1,0 +1,16 @@
+C:\Users\mejhg\Desktop\vs\DesignPatternPractice\DesignPatternPractice\bin\Debug\net5.0\DesignPatternPractice.exe
+C:\Users\mejhg\Desktop\vs\DesignPatternPractice\DesignPatternPractice\bin\Debug\net5.0\DesignPatternPractice.deps.json
+C:\Users\mejhg\Desktop\vs\DesignPatternPractice\DesignPatternPractice\bin\Debug\net5.0\DesignPatternPractice.runtimeconfig.json
+C:\Users\mejhg\Desktop\vs\DesignPatternPractice\DesignPatternPractice\bin\Debug\net5.0\DesignPatternPractice.runtimeconfig.dev.json
+C:\Users\mejhg\Desktop\vs\DesignPatternPractice\DesignPatternPractice\bin\Debug\net5.0\DesignPatternPractice.dll
+C:\Users\mejhg\Desktop\vs\DesignPatternPractice\DesignPatternPractice\bin\Debug\net5.0\ref\DesignPatternPractice.dll
+C:\Users\mejhg\Desktop\vs\DesignPatternPractice\DesignPatternPractice\bin\Debug\net5.0\DesignPatternPractice.pdb
+C:\Users\mejhg\Desktop\vs\DesignPatternPractice\DesignPatternPractice\obj\Debug\net5.0\DesignPatternPractice.csproj.AssemblyReference.cache
+C:\Users\mejhg\Desktop\vs\DesignPatternPractice\DesignPatternPractice\obj\Debug\net5.0\DesignPatternPractice.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mejhg\Desktop\vs\DesignPatternPractice\DesignPatternPractice\obj\Debug\net5.0\DesignPatternPractice.AssemblyInfoInputs.cache
+C:\Users\mejhg\Desktop\vs\DesignPatternPractice\DesignPatternPractice\obj\Debug\net5.0\DesignPatternPractice.AssemblyInfo.cs
+C:\Users\mejhg\Desktop\vs\DesignPatternPractice\DesignPatternPractice\obj\Debug\net5.0\DesignPatternPractice.csproj.CoreCompileInputs.cache
+C:\Users\mejhg\Desktop\vs\DesignPatternPractice\DesignPatternPractice\obj\Debug\net5.0\DesignPatternPractice.dll
+C:\Users\mejhg\Desktop\vs\DesignPatternPractice\DesignPatternPractice\obj\Debug\net5.0\ref\DesignPatternPractice.dll
+C:\Users\mejhg\Desktop\vs\DesignPatternPractice\DesignPatternPractice\obj\Debug\net5.0\DesignPatternPractice.pdb
+C:\Users\mejhg\Desktop\vs\DesignPatternPractice\DesignPatternPractice\obj\Debug\net5.0\DesignPatternPractice.genruntimeconfig.cache
