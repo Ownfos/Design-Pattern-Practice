@@ -1,11 +1,10 @@
 # Design-Pattern-Practice
-The purpose of this project is as following:
-1. Practice implementing each design pattern with simple example
-2. Implement each example again in naive way (only simple inheritance)
-3. Compare pros and cons of two counterparts.
-4. Analyze the situation where we might want to apply each design patter
-<br>
-Detailed description and explanation for each example can be found in [Program.cs](https://github.com/Ownfos/Design-Pattern-Practice/blob/master/DesignPatternPractice/Program.cs)
+- The purpose of this project is as following:
+  1. Practice implementing each design pattern with simple example
+  2. Implement each example again in naive way (only simple inheritance)
+  3. Compare pros and cons of two counterparts.
+  4. Analyze the situation where we might want to apply each design patter
+- Detailed description and explanation for each example can be found in [Program.cs](https://github.com/Ownfos/Design-Pattern-Practice/blob/master/DesignPatternPractice/Program.cs)
 
 ## Structure of source files
 - root folder
