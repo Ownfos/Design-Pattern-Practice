@@ -9,6 +9,80 @@ namespace DesignPatternPractice
         {
             TestStrategyPattern();
             TestObserverPattern();
+            TestDecoratorPattern();
+        }
+
+        // When should we consider using decorator pattern?
+        //  1. requires several different attributes to be applied to a base class and its children
+        //  2. attributes are not dependent on the order they are applied (e.g., A->B and B->A give same result)
+        //  3. attributes can be duplicated (e.g., adding extra shot to a cup of coffee can happen multiple times)
+        //  4. some attributes might be added/deleted in the future
+        // Note that 2 and 3 are just recommendations.
+        // We probably can detect and control the order or stacking of decorators.
+        // However, that would add extra layer of complexity (which we generally want to avoid)
+        static void TestDecoratorPattern()
+        {
+            // Naive approach
+            //
+            // Pros:
+            //  1. object creation is simple (single constructor is all you need)
+            //  2. minimal # of classes, thus easy to understand
+            //  3. can handle dependency between attributes
+            //     (e.g., give visual effect for enemies with isPowerful and isResistant flags both set to true)
+            //
+            // Cons:
+            //  1. adding/deleting attribute requires modification on all child classes
+            //     (e.g., removing isResistant flag from Enemy requires removing corresponding parameter in all child class constructors)
+            //  2. effect of each attribute is spread all over Enemy class,
+            //     making it hard to track or analyze the overall effect independently (i.e., low cohesion)
+            {
+                var enemies = new List<Decorator.Naive.Enemy>()
+                {
+                    new Decorator.Naive.Archer(false, false, false), // Normal archer
+                    new Decorator.Naive.Archer(false, true, true), // Elite powerful archer
+                    new Decorator.Naive.Knight(false, false, false), // Normal knight
+                    new Decorator.Naive.Knight(true, false, true) // Elite resistant knight
+                };
+
+                foreach(var enemy in enemies)
+                {
+                    Console.WriteLine($"{enemy.GetFullName()} - HP: {enemy.GetHP()}, ATK: {enemy.GetATK()}");
+                    enemy.Attack();
+                }
+
+                PrintSeperatingLine();
+            }
+
+            // Better approach with decorator pattern
+            //
+            // Pros:
+            //  1. adding/deleting attribute is simple (just delete corresponding class)
+            //  2. all effects of one attribute is handled in single class (high cohesion)
+            //  3. concrete classes of Enemy does not depend on attributes (loose coupling)
+            //
+            // Cons:
+            //  1. object creation is lot more complex
+            //  2. higher abstraction means increased complexity and effort required to understand the code
+            //  3. cannot control or handle dependency between each attributes
+            //     (e.g., we need to write more complex code in order to detect and prevent duplicate attributes
+            //     being applied to an Archer instance, something like "Powerful Powerful Elite Powerful Archer")
+            {
+                var enemies = new List<Decorator.Better.Enemy>()
+                {
+                    new Decorator.Better.Archer(), // Normal archer
+                    new Decorator.Better.Elite(new Decorator.Better.Powerful(new Decorator.Better.Archer())), // Elite powerful archer
+                    new Decorator.Better.Knight(), // Normal Knight
+                    new Decorator.Better.Elite(new Decorator.Better.Resistant(new Decorator.Better.Knight())), // Elite resistant knight
+                };
+
+                foreach (var enemy in enemies)
+                {
+                    Console.WriteLine($"{enemy.GetName()} - HP: {enemy.GetHP()}, ATK: {enemy.GetATK()}");
+                    enemy.Attack();
+                }
+
+                PrintSeperatingLine();
+            }
         }
 
         // When should we consider using observer pattern?
